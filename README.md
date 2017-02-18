@@ -1,12 +1,16 @@
 # Bleichenbachers "Million Message Attack" on RSA
 
-This repo contains a python project to demonstrate Daniel Bleichenbacher's million message attack against RSA encryption and PKCS #1 padding.
+This repo contains two python projects to demonstrate Daniel Bleichenbacher's million message attack against RSA encryption and PKCS #1 padding.
 
-# RSA Parity Oracle
+## PKCS #1 Padding Oracle
 
-The effects of leaking the LSB (the Parity-Bit) of an RSA plaintext is demonstrated in `Parity_Oracle`. 
+The bleichenbacher oracle is implemented in `Bleichenbacher_Oracle`.
 
-The code is mostly taken from [Practical-Padding-Oracle-Attacks-on-RSA](http://secgroup.dais.unive.it/wp-content/uploads/2012/11/Practical-Padding-Oracle-Attacks-on-RSA.html). Snce we find it very helpful to understand the Bleichenbacher oracle, it is included here as well.
+## RSA Parity Oracle
+
+The effects of leaking the LSB (the Parity-Bit) of an RSA plaintext is demonstrated via `Parity_Oracle`. 
+
+The code is mostly taken from [Practical-Padding-Oracle-Attacks-on-RSA](http://secgroup.dais.unive.it/wp-content/uploads/2012/11/Practical-Padding-Oracle-Attacks-on-RSA.html). Since we find it very helpful to understand the Bleichenbacher oracle, it is included here as well.
 
 # Good to know
 
