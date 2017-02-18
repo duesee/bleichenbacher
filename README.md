@@ -15,11 +15,10 @@ The code is mostly taken from [Practical-Padding-Oracle-Attacks-on-RSA](http://s
 # Good to know
 
 * The `python-crypto` package is needed. Please install it.
-* Text is always Unicode and is represented by the str type -- binary data is represented by the bytes type. Please refer to http://eli.thegreenplace.net/2012/01/30/the-bytesstr-dichotomy-in-python-3 for further information.
-* We experienced many type errors during development. Thus, many functions are type-checked via a custom decorator and special annotations.
+* Text in Python 3 is always Unicode and represented by the `str` type. Binary data is represented by the `bytes` type. Please see http://eli.thegreenplace.net/2012/01/30/the-bytesstr-dichotomy-in-python-3 for further information.
+* We had some trouble with type errors during development. Thus, many functions are type-checked via a custom decorator and special annotations. (We found this pattern to be very useful in many scenarios.)
 
 # Literature
 
 * "Chosen Ciphertext Attacks Against Protocols Based on the RSA Encryption Standard PKCS #1" by Daniel Bleichenbacher.
-
 * [Practical-Padding-Oracle-Attacks-on-RSA](http://secgroup.dais.unive.it/wp-content/uploads/2012/11/Practical-Padding-Oracle-Attacks-on-RSA.html)
